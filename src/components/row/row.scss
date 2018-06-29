@@ -1,0 +1,9 @@
+.row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > * {
+    margin: 1rem;
+  }
+}

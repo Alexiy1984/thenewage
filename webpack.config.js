@@ -22,6 +22,17 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ]
   },
@@ -43,6 +54,7 @@ module.exports = {
     })
   ],
   devServer: {
+    port: 9000,
     contentBase: './dist',
     hot: true
   }

@@ -1,0 +1,14 @@
+.card_clicked {
+  cursor: pointer;
+  width: 24rem;
+  height: 24rem;
+  position: relative;
+  perspective: 1500px;
+  .card__front {
+    transform: rotateY(-180deg);
+  }
+  .card__back {
+    transform: rotateY(0);
+  }
+}
+
