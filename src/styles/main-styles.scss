@@ -1,0 +1,53 @@
+@import './colors.scss';
+
+.theme-one{
+  &.button {
+    background: map-get($fresh_and_bright, color1);
+    color: map-get($fresh_and_bright, textcolor); 
+    &:hover {
+      background: map-get($fresh_and_bright, color2); 
+    }
+  }
+  &.wrapper {
+    background: map-get($fresh_and_bright, bgcolor); 
+  }
+  &.header {
+    background: map-get($fresh_and_bright, color1); 
+  }
+  &.card{
+    &__front {
+      background: map-get($fresh_and_bright, color3);
+      color: map-get($fresh_and_bright, textcolorrev); 
+    }
+    &__back {
+      background: map-get($fresh_and_bright, color4);
+      color: map-get($fresh_and_bright, textcolorrev); 
+    }
+  }
+}
+
+.theme-two{
+  &.button {
+    background: map-get($cool_blues, color1);
+    color: map-get($cool_blues, textcolor); 
+    &:hover {
+      background: map-get($cool_blues, color2); 
+    }
+  }
+  &.wrapper {
+    background: map-get($cool_blues, bgcolor); 
+  }
+  &.header {
+    background: map-get($cool_blues, color1); 
+  }
+  &.card{
+    &__front {
+      background: map-get($cool_blues, color3);
+      color: map-get($cool_blues, textcolorrev); 
+    }
+    &__back {
+      background: map-get($cool_blues, color4);
+      color: map-get($cool_blues, textcolorrev); 
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$fresh_and_bright: (
+  color1        : #f98866,
+  color2        : #ff420e,
+  color3        : #80bd9e,
+  color4        : #89da59,
+  textcolor     : #ffffff,
+  textcolorrev  : #000000,
+  bgcolor     : lighten(#80bd9e, 35%)
+); 
+
+$cool_blues : (
+  color1        : #003b46,
+  color2        : #07575b,
+  color3        : #66a5ad,
+  color4        : #c4dfe6,
+  textcolor     : #ffffff,
+  textcolorrev  : #000000,
+  bgcolor     : lighten(#66a5ad, 35%)
+);

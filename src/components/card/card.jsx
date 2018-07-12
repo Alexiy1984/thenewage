@@ -24,13 +24,13 @@ export default class Card extends React.Component {
   render() {
     return (
       <div className = {this.state.thisClass} onClick={this.changeClass}>
-      <div className = "card__front">       
+      <div className ={`card__front ${this.props.color!=undefined ? this.props.color: ''}`}>       
         <img className='card__img' src={this.props.imgurl} alt=""/>
         <h3 className='card__heading'>{this.props.name}</h3>
         <h3 className='card__heading'>{this.props.proff}</h3>
         <p>{this.props.descr}</p>
       </div>
-      <div className="card__back">
+      <div className={`card__back ${this.props.color!=undefined ? this.props.color: ''}`}>
         <p>Это back</p>
       </div>
     </div>

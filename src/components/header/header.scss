@@ -2,7 +2,14 @@
   display: flex;
   background-color:#000000;
   color: #ffffff;
+  &__heading {
+    margin-right: auto;
+  }
   &__inner {
     padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
